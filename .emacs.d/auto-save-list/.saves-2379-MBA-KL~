@@ -1,0 +1,16 @@
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/proto/fare_data.thrift
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/proto/#fare_data.thrift#
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/java/com/travelzen/fare/datacollect/MybatisFareDataConverter.java
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/java/com/travelzen/fare/datacollect/#MybatisFareDataConverter.java#
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/java/com/travelzen/fare/datacollect/DataConvertTask.java
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/java/com/travelzen/fare/datacollect/#DataConvertTask.java#
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/resources-prod-hk/datacollect-config.json
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/resources-prod-hk/#datacollect-config.json#
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/resources-prod-hk/dandelion-config.json
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/resources-prod-hk/#dandelion-config.json#
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/resources-prod-hk/db.properties
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/resources-prod-hk/#db.properties#
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/java/com/travelzen/fare/datacollect/Main.java
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/datacollect/src/main/java/com/travelzen/fare/datacollect/#Main.java#
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/dandelion/src/main/java/com/travelzen/fare/dandelion/mongoimpl/MongoUtil.java
+/usr/local/klzhong/workspace/sh-git-repo/tz/tops-fare/dandelion/src/main/java/com/travelzen/fare/dandelion/mongoimpl/#MongoUtil.java#
