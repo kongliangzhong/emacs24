@@ -1,10 +1,13 @@
 ;;;;***************************** common ****************************************
+
 ; hide menu bar
 (menu-bar-mode -1)
 
 ; set tabs to spaces
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+; set tab width in text mode:
+(setq indent-line-function 'insert-tab)
 
 ;;(desktop-save-mode 1)  ;; saving emacs sessions.
 
@@ -30,7 +33,12 @@
 (iswitchb-mode 1)
 
 ;; untabify and delete-trailling-whitespaces on save in some mode:
-(setq alexott/untabify-modes '(emacs-lisp-mode java-mode scala-mode c-mode go-mode web-mode nxml-mode sgml-mode groovy-mode))
+(setq alexott/untabify-modes
+      '(emacs-lisp-mode
+        java-mode scala-mode c-mode go-mode web-mode nxml-mode
+        sgml-mode groovy-mode javascript-mode thrift-mode
+        js-mode coffee-mode))
+
 (defun alexott/untabify-hook()
   (when (member major-mode alexott/untabify-modes)
     (delete-trailing-whitespace)
@@ -38,6 +46,12 @@
 (add-hook 'before-save-hook 'alexott/untabify-hook)
 
 ;;;;;;;;;;;;;;;;;;;;;; Common mode ;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;; Global setting key ;;;;;;;;;;;;;;;;
+
+(global-set-key (kbd "C-h j") 'javadoc-lookup)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;-------------- tools -------------
 
@@ -56,20 +70,9 @@
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-;use sgml-mode for xml-mode.
-(defalias 'xml-mode 'sgml-mode
-    "Use `sgml-mode' instead of nXML's `xml-mode'.")
-;; Defines tab spacing in sgml mode (includes XML mode)
-;; source: http://www.emacswiki.org/emacs/IndentingHtml
-;; (setq sgml-basic-offset 4)  ;; default 2 , ok for me.
-
-;; indent 4 in groovy-mode.
-(add-hook 'groovy-mode-hook
-          (setq indent-tabs-mode nil
-                c-basic-offset 4))
-
-;; support gradle build file with groovy-mode.
+;; ;; support gradle build file with groovy-mode.
 (add-to-list 'auto-mode-alist '("\.gradle$" . groovy-mode))
+(add-to-list 'auto-mode-alist '("\.jaap$" . java-mode))
 
 (require 'auto-complete-config)
 ;(add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/ac-dict")
@@ -80,10 +83,10 @@
 
 ;;yasnippet:
 (require 'yasnippet) ;; not yasnippet-bundle
-(yas/initialize)
-(setq yas/root-directory "~/.emacs.d/elpa/yasnippet-extra")
+;;(yas/initialize)
+;;(setq yas/root-directory "~/.emacs.d/elpa/yasnippet-extra")
 (setq yas/prompt-functions '( yas/dropdown-prompt yas/x-prompt yas/ido-prompt yas/completing-prompt))
-(yas/load-directory yas/root-directory)
+;;(yas/load-directory yas/root-directory)
 (yas/global-mode 1)
 (yas/minor-mode-on)
 
@@ -97,3 +100,36 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;; custom web-mode html-tag-bracket color.
+(set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "tan3")
+;;;;;;;;;;;;;;;;;;;;;; INDENT ;;;;;;;;;;;;;;;;;;;
+;; indent 4 in groovy-mode.
+;; (add-hook 'groovy-mode-hook
+;;           (setq indent-tabs-mode nil
+;;                 c-basic-offset 4))
+
+;; indent 4 for js:
+;;(setq js-indent-level 4)
+
+;; indent 2 for web-mode:
+(setq web-mode-markup-indent-offset 2)
+
+;;use sgml-mode for xml-mode.
+(defalias 'xml-mode 'sgml-mode
+  "Use `sgml-mode' instead of nXML's `xml-mode'.")
+;; Defines tab spacing in sgml mode (includes XML mode)
+;; source: http://www.emacswiki.org/emacs/IndentingHtml
+;;(setq sgml-basic-offset 2)  ;; default 2
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; javadoc-lookup config:
+(require 'javadoc-lookup)
+(javadoc-add-roots "/usr/local/klzhong/javadoc-repo/jdk-7u80-docs-all/docs/api"
+                   "/usr/local/klzhong/javadoc-repo/spring-framework-4.1.7.RELEASE-docs/javadoc-api")
+
+
+;; load packages load by Homebrew:
+(let ((default-directory "/usr/local/share/emacs/site-lisp/"))
+  (normal-top-level-add-subdirs-to-load-path))

@@ -1,224 +1,576 @@
-((("segmentList" .
-   [0 0 0 0 0 1 0 0 0 0 0])
-  ("fsegment" .
-   [0 0 1 0 0 0 0 0])
-  ("FlightSegment" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("flush" .
-   [0 0 0 1 0])
-  ("write" .
-   [1 0 0 0 0])
-  ("printStackTrace" .
-   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("comapreResultFile" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("FileWriter" .
-   [0 0 0 0 2 0 0 0 0 0])
-  ("generateRoutePairString" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("con" .
-   [0 0 1])
-  ("routePairList" .
-   [0 0 0 0 0 0 5 0 0 0 0 0 0])
-  ("RoutePair" .
-   [0 0 0 0 1 2 4 0 0])
-  ("get" .
-   [2 0 0])
-  ("null" .
-   [6 0 0 0])
-  ("routeInfoList" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("res" .
-   [3 0 0])
-  ("routeInfo" .
-   [0 0 0 0 0 0 1 0 0])
-  ("getGds" .
+((("currentTimeMillis" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("System" .
    [1 0 0 0 0 0])
-  ("getPrice" .
-   [1 0 0 0 0 0 0 0])
-  ("getToCity" .
-   [0 0 0 0 0 0 1 0 0])
-  ("getFromCity" .
-   [0 0 0 0 0 0 0 0 1 0 0])
-  ("fare2goResultFile" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("getAirCo" .
-   [0 0 0 0 1 0 1 0])
-  ("r" .
-   [2])
-  ("travelzenRouteMap" .
-   [0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("size" .
-   [10 0 0 0])
-  ("airRouteInfo2Str" .
-   [1 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("route2Str" .
-   [1 0 0 0 0 1 0 0 0])
-  ("getBookingClass" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("setBookingClass" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("removeAll" .
-   [0 0 0 0 0 1 0 0 0])
-  ("break" .
-   [0 0 0 1 0])
-  ("bothHavaFly2goList" .
-   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("bothHavaTravelzenList" .
-   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("travelzen" .
-   [1 0 0 0 0 0 0 0 0])
-  ("airCompany" .
-   [0 0 0 3 1 0 0 0 0 0])
-  ("toAirport" .
+  ("delete" .
+   [1 0 0 0 0 0])
+  ("queueAutoAddDeleteTest" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("adminTest" .
    [0 0 0 1 0 0 0 0 0])
-  ("fromAirport" .
-   [0 0 0 0 0 1 0 0 0 0 0])
-  ("cr" .
-   [6 0])
-  ("instanceof" .
-   [0 0 0 0 0 1 0 0 0 0])
-  ("@Override" .
-   [0 0 1 0 0 0 0 0 0])
-  ("equals" .
-   [0 0 6 0 0 0])
-  ("fl" .
-   [2 1])
-  ("r2" .
-   [4 0])
-  ("r1" .
-   [3 0])
-  ("ari" .
-   [6 0 0])
-  ("set" .
-   [1 0 0])
-  ("airRouteInfoList" .
-   [0 0 0 2 6 0 0 0 0 0 0 0 0 0 0 0])
-  ("add" .
-   [8 0 0])
-  ("getAirCompany" .
-   [0 0 0 0 7 0 1 0 0 1 0 0 0])
-  ("setAirCompany" .
+  ("createAndDeleteQueues" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("rabbitmqAdmin" .
    [0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("getToAirport" .
-   [0 0 0 0 0 2 1 0 0 0 0 0])
-  ("setToAirport" .
-   [0 0 0 0 0 0 1 0 0 0 0 0])
-  ("getFromAirport" .
-   [0 0 0 0 0 0 0 0 3 0 0 0 0 0])
-  ("route" .
-   [12 0 0 0 0])
-  ("setFromAirport" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("setFromCity" .
-   [0 0 0 0 0 0 0 0 1 0 0])
-  ("foreach" .
-   [0 0 0 0 7 1 0])
-  ("ArrayList" .
-   [1 0 1 2 0 0 0 0 0])
-  ("CompareResult" .
-   [1 0 0 16 2 0 0 0 0 0 0 0 0])
-  ("compareResult" .
-   [0 0 0 0 0 0 0 0 3 0 0 0 0])
-  ("fare2goRes1" .
-   [1 0 0 0 1 0 0 0 0 0 0])
-  ("travelzenRes1" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("compareAndPrint" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("tripType1" .
+  ("unusedQ" .
+   [0 0 0 1 0 0 0])
+  ("newQ" .
+   [1 0 0 0])
+  ("delQueues" .
+   [0 0 0 0 2 0 0 0 0])
+  ("isEmpty" .
+   [0 0 0 1 1 0 0])
+  ("newQueues" .
+   [0 0 0 0 1 1 0 0 1])
+  ("queuesNeedToDelete" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("queuesNeedToAdd" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("queuesInConfig" .
+   [0 0 1 0 0 0 0 1 0 0 0 0 0 0])
+  ("union" .
+   [3 0 0 0 2])
+  ("a" .
+   [1])
+  ("currQueueSet" .
+   [1 0 0 1 2 1 0 0 0 0 0 2])
+  ("n" .
+   [2])
+  ("queueSet" .
+   [0 0 2 1 0 0 1 1])
+  ("HashSet" .
+   [0 0 0 1 0 1 2])
+  ("queues" .
+   [0 0 0 0 0 1])
+  ("Set" .
+   [7 0 0])
+  ("trim" .
+   [1 0 0 0])
+  ("readLine" .
+   [1 0 0 0 0 2 0 0])
+  ("InputStreamReader" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("ins" .
+   [1 0 0])
+  ("br" .
+   [3 0])
+  ("BufferedReader" .
+   [0 0 0 0 1 0 1 0 0 0 0 0 0 0])
+  ("http://compa:8080" .
+   [0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0])
+  ("require" .
+   [0 0 0 0 1 0 0])
+  ("DBObject" .
+   [0 0 1 1 0 0 0 0])
+  ("AGGREGATE_LIMIT_MAX" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("getValue" .
+   [0 0 0 0 1 0 0 0])
+  ("tsEnd" .
+   [0 0 0 2 0])
+  ("tsBegin" .
+   [0 0 0 2 0 0 0])
+  ("rand" .
+   [1 0 0 0])
+  ("this" .
+   [2 0 0 0])
+  ("ConcurrentHashMap" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("concurrent" .
+   [0 0 0 0 1 1 0 0 0 0])
+  ("i" .
+   [1])
+  ("newTimestamp" .
+   [0 0 0 0 0 0 0 1 3 0 0 0])
+  ("getTimestamp" .
+   [0 0 0 0 0 0 0 0 2 0 0 0])
+  ("di" .
+   [3 0])
+  ("resultList" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("Date" .
+   [2 0 0 0])
+  ("Data" .
+   [1 0 0 0])
+  ("util" .
+   [1 0 0 0])
+  ("show" .
+   [1 0 0 0])
+  ("setTimeout" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("titleText" .
+   [2 0 0 0 0 0 0 1 0])
+  ("xAxis" .
+   [0 0 1 0 0])
+  ("push" .
+   [1 0 0 1])
+  ("while" .
+   [1 0 0 0 1])
+  ("length" .
+   [1 0 1 1 0 0])
+  ("initUrl" .
+   [1 0 0 0 0 0 0])
+  ("createOption" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("seriesData" .
+   [0 0 0 3 0 0 0 0 0 0])
+  ("xData" .
+   [1 0 3 0 0])
+  ("series" .
+   [0 0 0 1 0 1])
+  ("len" .
+   [5 0 0])
+  ("title" .
+   [4 0 0 0 0])
+  ("collName" .
+   [0 0 0 0 0 5 0 0])
+  ("getCollName" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("return" .
+   [11 0 0 0 1 0])
+  ("itemData" .
+   [1 0 0 0 0 1 0 0])
+  ("dom" .
+   [1 0 0])
+  ("d" .
+   [2])
+  ("echarts-all-src" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("find" .
+   [1 0 0 0])
+  ("echarts" .
+   [0 0 0 0 1 0 0])
+  ("$http" .
+   [1 0 0 0 0])
+  ("currentSys" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("c" .
+   [3])
+  ("itemName" .
+   [1 0 0 0 0 5 0 0])
+  ("loadEchart" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("name" .
+   [3 0 0 0])
+  ("function" .
+   [0 0 0 3 0 0 0 0])
+  ("e" .
+   [1])
+  ("attr" .
+   [8 0 0 0])
+  ("element" .
+   [1 0 0 3 1 1 0])
+  ("getElementById" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 1])
+  ("document" .
+   [0 0 0 0 0 0 0 3])
+  ("debug" .
+   [2 0 2 2 10])
+  ("console" .
+   [1 0 0 0 1 6 2])
+  ("java" .
+   [4 0 0 0])
+  ("import" .
+   [2 0 0 0 0 0])
+  ("MonitorTimeUnit" .
+   [0 0 0 0 1 0 0 0 1 0 0 0 0 0 0])
+  ("option" .
+   [1 0 1 2 0 0])
+  ("myChart" .
+   [0 0 0 2 0 0 0])
+  ("tsStr" .
+   [0 0 1 1 0])
+  ("val" .
+   [2 0 0])
+  ("lastDataArray" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 1])
+  ("last" .
+   [1 0 0 0])
+  ("date" .
+   [2 0 0 0])
+  ("for" .
+   [4 0 0])
+  ("id" .
+   [4 0])
+  ("item" .
+   [2 0 0 0])
+  ("data" .
+   [9 0 0 0])
+  ("url" .
+   [4 0 0])
+  ("var" .
+   [22 0 0])
+  ("timePeroid" .
+   [1 0 0 0 0 2 0 0 0 0])
+  ("$scope" .
+   [0 0 0 2 0 0])
+  ("getLastData" .
+   [0 0 0 0 1 1 0 0 0 0 0])
+  ("lastestTsObj" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("0L" .
+   [1 0])
+  ("lastTimestamp" .
+   [0 0 0 0 0 0 0 0 4 2 1 0 0])
+  ("long" .
+   [3 0 0 0])
+  ("lastTsMap" .
+   [0 0 0 0 0 0 2 1 1])
+  ("lastestTs" .
+   [1 0 0 0 0 0 1 0 0])
+  ("itemId" .
+   [1 0 0 0 3 6])
+  ("sys" .
+   [1 0 0])
+  ("generateTsKey" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("key" .
+   [5 0 0])
+  ("tuStr" .
+   [0 0 0 2 0])
+  ("toString" .
+   [2 0 0 0 0 0 0 0])
+  ("tu" .
+   [5 0])
+  ("valueOf" .
+   [1 0 0 0 0 0 0])
+  ("void" .
+   [1 0 0 0])
+  ("public" .
+   [2 0 0 0 0 0])
+  ("trans" .
+   [1 0 0 0 0])
+  ("addAll" .
+   [0 0 0 0 4 0])
+  ("transList" .
+   [1 0 0 0 0 0 2 0 0])
+  ("Transaction" .
+   [0 0 0 0 2 0 0 0 0 0 0])
+  ("setPosId" .
+   [0 0 0 0 0 0 1 0])
+  ("getPosId" .
+   [0 0 0 0 0 0 0 1])
+  ("merchantRule" .
+   [0 0 0 0 0 2 0 0 0 0 0 1])
+  ("getString" .
+   [1 0 0 0 0 0 0 0 0])
+  ("rs" .
+   [1 0])
+  ("posId" .
+   [1 0 0 0 4])
+  ("_mrList" .
+   [0 0 0 0 1 0 0])
+  ("new" .
+   [10 0 0])
+  ("mid" .
+   [1 0 0])
+  ("put" .
+   [2 0 0])
+  ("getMerchantRules" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("rule" .
+   [2 0 0 0])
+  ("mr" .
+   [1 0])
+  ("continue" .
+   [1 0 0 0 0 1 0 0])
+  ("getMessage" .
+   [0 0 0 0 0 0 0 0 0 3])
+  ("v" .
+   [2])
+  ("ex" .
+   [7 0])
+  ("error" .
+   [3 0 0 0 1])
+  ("log" .
+   [19 0 0])
+  ("tryc" .
+   [2 0 0 1])
+  ("entrySet" .
+   [0 0 0 0 0 0 2 0])
+  ("version" .
+   [1 0 0 0 0 0 0])
+  ("line" .
+   [8 0 0 0])
+  ("LINES" .
+   [0 0 0 0 1])
+  ("pa" .
+   [3 0])
+  ("package" .
+   [0 0 1 0 0 0 0])
+  ("header" .
+   [0 0 0 1 1 0])
+  ("prop" .
+   [8 0 0 1])
+  ("dependency" .
+   [0 0 1 0 0 0 0 0 0 0])
+  ("BasicDBObject" .
+   [0 0 1 0 1 0 0 0 0 0 0 0 0])
+  ("PaperFare" .
    [0 0 0 1 0 0 0 0 0])
-  ("returnDate1" .
-   [0 0 1 0 0 0 0 0 0 0 0])
-  ("fromDate1" .
+  ("paperFare" .
+   [1 0 0 0 0 0 0 0 0])
+  ("com" .
+   [2 0 0])
+  ("mongodb" .
+   [3 0 0 0 0 0 0])
+  ("String" .
+   [36 0 0 0 0 1])
+  ("in" .
+   [1 0])
+  ("MongoClient" .
+   [1 0 0 0 0 2 0 0 0 0 0])
+  ("mongoClient" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("mongoHost" .
+   [1 0 0 0 0 0 0 0 0])
+  ("port" .
+   [1 0 0 0])
+  ("o" .
+   [1])
+  ("synchronized" .
+   [0 0 1 0 0 0 0 0 0 0 0 0])
+  ("paperFareMongoService" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cla" .
+   [2 0 0])
+  ("main" .
+   [1 0 0 0])
+  ("p" .
+   [1])
+  ("f" .
+   [3])
+  ("List" .
+   [16 0 0 0])
+  ("Route" .
+   [8 0 0 0 1])
+  ("routeList" .
+   [2 0 0 0 0 3 8 0 0])
+  ("AirRouteInfo" .
+   [0 0 0 7 2 0 0 0 0 0 0 0])
+  ("airRouteInfo" .
+   [1 0 0 1 0 0 0 0 0 0 0 0])
+  ("t" .
+   [5])
+  ("tos" .
+   [0 0 1])
+  ("fromCity" .
+   [1 0 0 0 0 0 0 0])
+  ("toCity" .
+   [1 0 0 1 0 0])
+  ("fromDate" .
+   [1 0 0 0 1 0 0 0])
+  ("TripType" .
+   [0 0 0 0 1 0 0 0])
+  ("tripType" .
+   [0 0 0 0 2 0 0 0])
+  ("searchCondition" .
+   [0 0 0 0 3 0 0 0 0 0 0 0 0 0 0])
+  ("toDate" .
+   [0 0 0 1 0 0])
+  ("Exception" .
+   [1 0 0 0 0 1 0 0 0])
+  ("CompareFormatter" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0])
+  ("formatter" .
+   [0 0 0 0 0 2 0 0 0])
+  ("fromCity1" .
    [0 0 0 0 0 1 0 0 0])
   ("toCity1" .
    [0 0 0 1 0 0 0])
-  ("fromCity1" .
+  ("fromDate1" .
    [0 0 0 0 0 1 0 0 0])
-  ("formatter" .
-   [0 0 0 0 0 2 0 0 0])
-  ("CompareFormatter" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0])
-  ("Exception" .
-   [1 0 0 0 0 1 0 0 0])
-  ("toDate" .
-   [0 0 0 1 0 0])
-  ("searchCondition" .
-   [0 0 0 0 3 0 0 0 0 0 0 0 0 0 0])
-  ("tripType" .
-   [0 0 0 0 2 0 0 0])
-  ("TripType" .
-   [0 0 0 0 1 0 0 0])
-  ("fromDate" .
-   [1 0 0 0 1 0 0 0])
-  ("toCity" .
-   [1 0 0 1 0 0])
-  ("fromCity" .
-   [1 0 0 0 0 0 0 0])
-  ("tos" .
-   [0 0 1])
-  ("t" .
-   [4])
-  ("airRouteInfo" .
-   [1 0 0 1 0 0 0 0 0 0 0 0])
-  ("AirRouteInfo" .
-   [0 0 0 7 2 0 0 0 0 0 0 0])
-  ("routeList" .
-   [2 0 0 0 0 3 8 0 0])
-  ("Route" .
-   [8 0 0 0 1])
-  ("List" .
-   [13 0 0 0])
-  ("f" .
-   [3])
-  ("p" .
-   [1])
-  ("main" .
-   [1 0 0 0])
-  ("cla" .
-   [2 0 0])
-  ("paperFareMongoService" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("synchronized" .
-   [0 0 1 0 0 0 0 0 0 0 0 0])
-  ("o" .
-   [1])
-  ("port" .
-   [1 0 0 0])
-  ("mongoHost" .
-   [1 0 0 0 0 0 0 0 0])
-  ("mongoClient" .
-   [0 0 0 0 0 0 0 0 1 0 0])
-  ("MongoClient" .
-   [1 0 0 0 0 2 0 0 0 0 0])
-  ("in" .
-   [1 0])
-  ("String" .
-   [19 0 0 0 0 0])
-  ("mongodb" .
-   [3 0 0 0 0 0 0])
-  ("com" .
-   [2 0 0])
-  ("paperFare" .
-   [1 0 0 0 0 0 0 0 0])
-  ("PaperFare" .
+  ("returnDate1" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("tripType1" .
    [0 0 0 1 0 0 0 0 0])
-  ("BasicDBObject" .
-   [0 0 1 0 1 0 0 0 0 0 0 0 0])
-  ("dependency" .
-   [0 0 1 0 0 0 0 0 0 0])
-  ("prop" .
-   [8 0 0 1])
-  ("header" .
-   [0 0 0 1 1 0])
-  ("package" .
-   [0 0 1 0 0 0 0])
-  ("pa" .
-   [2 0])
-  ("LINES" .
-   [0 0 0 0 1])
-  ("line" .
+  ("compareAndPrint" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("travelzenRes1" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("fare2goRes1" .
+   [1 0 0 0 1 0 0 0 0 0 0])
+  ("compareResult" .
+   [0 0 0 0 0 0 0 0 3 0 0 0 0])
+  ("CompareResult" .
+   [1 0 0 16 2 0 0 0 0 0 0 0 0])
+  ("ArrayList" .
+   [1 0 1 2 0 0 0 0 1])
+  ("foreach" .
+   [0 0 0 0 7 1 0])
+  ("setFromCity" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("setFromAirport" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("route" .
+   [12 0 0 0 0])
+  ("getFromAirport" .
+   [0 0 0 0 0 0 0 0 3 0 0 0 0 0])
+  ("setToAirport" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("getToAirport" .
+   [0 0 0 0 0 2 1 0 0 0 0 0])
+  ("setAirCompany" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("getAirCompany" .
+   [0 0 0 0 7 0 1 0 0 1 0 0 0])
+  ("add" .
+   [9 0 0])
+  ("airRouteInfoList" .
+   [0 0 0 2 6 0 0 0 0 0 0 0 0 0 0 0])
+  ("set" .
+   [1 0 0])
+  ("ari" .
+   [6 0 0])
+  ("r1" .
+   [3 0])
+  ("r2" .
+   [4 0])
+  ("fl" .
+   [2 1])
+  ("equals" .
+   [0 0 6 0 0 0])
+  ("@Override" .
+   [0 0 1 0 0 0 0 0 0])
+  ("instanceof" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("cr" .
+   [7 0])
+  ("fromAirport" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("toAirport" .
+   [0 0 0 1 0 0 0 0 0])
+  ("airCompany" .
+   [0 0 0 3 1 0 0 0 0 0])
+  ("travelzen" .
+   [1 0 0 0 0 0 0 0 0])
+  ("bothHavaTravelzenList" .
+   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("bothHavaFly2goList" .
+   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("break" .
+   [0 0 0 1 0])
+  ("removeAll" .
+   [0 0 0 0 0 1 1 1 0])
+  ("setBookingClass" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("getBookingClass" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("route2Str" .
+   [1 0 0 0 0 1 0 0 0])
+  ("airRouteInfo2Str" .
+   [1 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("size" .
+   [12 0 0 0])
+  ("travelzenRouteMap" .
+   [0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("r" .
+   [2])
+  ("getAirCo" .
+   [0 0 0 0 1 0 1 0])
+  ("fare2goResultFile" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("getFromCity" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("getToCity" .
+   [0 0 0 0 0 0 1 0 0])
+  ("getPrice" .
+   [1 0 0 0 0 0 0 0])
+  ("getGds" .
+   [1 0 0 0 0 0])
+  ("routeInfo" .
+   [0 0 0 0 0 0 1 0 0])
+  ("res" .
+   [3 0 0])
+  ("routeInfoList" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("null" .
+   [17 0 0 0])
+  ("get" .
+   [5 0 0])
+  ("RoutePair" .
+   [0 0 0 0 1 2 4 0 0])
+  ("routePairList" .
+   [0 0 0 0 0 0 5 0 0 0 0 0 0])
+  ("con" .
+   [0 0 1])
+  ("generateRoutePairString" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("FileWriter" .
+   [0 0 0 0 2 0 0 0 0 0])
+  ("comapreResultFile" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("printStackTrace" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 1])
+  ("write" .
+   [1 0 0 0 0])
+  ("flush" .
+   [0 0 0 1 0])
+  ("FlightSegment" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("fsegment" .
+   [0 0 1 0 0 0 0 0])
+  ("segmentList" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("private" .
+   [4 0 0 0 0 0 0])
+  ("scheduledExecutor" .
+   [0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("shutdown" .
+   [0 0 0 0 0 0 0 1])
+  ("awaitTermination" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("int" .
+   [3 0 0])
+  ("TimeUnit" .
+   [0 0 0 0 0 1 0 0])
+  ("MILLISECONDS" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("info" .
+   [7 0 0 0])
+  ("boolean" .
+   [1 0 0 0 0 0 0])
+  ("terminated" .
+   [1 0 0 0 0 1 0 1 0 0])
+  ("true" .
+   [2 0 0 0])
+  ("false" .
+   [2 0 0 0 0])
+  ("if" .
+   [11 0])
+  ("else" .
+   [2 0 0 0])
+  ("warning" .
+   [1 0 0 0 0 0 0])
+  ("s" .
+   [1])
+  ("final" .
+   [2 0 0 0 0])
+  ("service" .
+   [1 0 0 0 0 0 0])
+  ("static" .
+   [8 0 0 0 0 0])
+  ("Launcher" .
+   [0 0 0 1 0 0 0 0])
+  ("class" .
+   [2 0 0 0 0])
+  ("config" .
+   [1 0 1 0 0 0])
+  ("javadoc-lookup" .
+   [0 0 0 0 0 0 0 1 1 0 0 0 0 0])
+  ("http://compa:8080/mywebapp/proxyCallback" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("CuratorFramework" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("-XX:CompileCommand" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("*Bar.sum" .
+   [1 0 0 0 0 0 0 0])
+  ("AES" .
+   [2 0 0])
+  ("Main" .
    [1 0 0 0])
-  ("version" .
-   [1 0 0 0 0 0 0])))
+  ("setEncryptedString" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("encStr" .
+   [0 0 0 0 1 0])))
